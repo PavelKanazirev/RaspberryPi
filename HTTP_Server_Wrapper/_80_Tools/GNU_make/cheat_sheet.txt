@@ -1,0 +1,14 @@
+https://dev.to/dmendoza99/how-to-write-a-good-makefile-for-c-32e3
+
+https://gist.github.com/basharam/9511906
+
+g++ -c -I../api -I../private/include -Wall -Wextra -std=c++17 -ggdb -o ../private/src/foo_common.o ../private/src/foo_common.cpp
+ar rcs ../../_90_Delivery/bins/lib/lib_common.a ../private/src/foo_common.o
+g++ -Wall -Wextra -std=c++17 -ggdb -I../api -I../api/plugin -I../private/include -I../../_10_Common/api -c ../private/src/srv_foo_common.cpp -o ../../_90_Delivery/bins/app/srv_foo_common.o
+g++ -Wall -Wextra -std=c++17 -ggdb -I../api -I../api/plugin -I../private/include -I../../_10_Common/api -c ../private/src/foo_local.cpp -o ../../_90_Delivery/bins/app/foo_local.o
+g++ -Wall -Wextra -std=c++17 -ggdb -I../api -I../api/plugin -I../private/include -I../../_10_Common/api -c ../private/src/foo_api.cpp -o ../../_90_Delivery/bins/app/foo_api.o
+g++ -Wall -Wextra -std=c++17 -ggdb -I../api -I../api/plugin -I../private/include -I../../_10_Common/api -c ../private/src/srv_main.cpp -o ../../_90_Delivery/bins/app/srv_main.o
+g++ -Wall -Wextra -std=c++17 -ggdb -o ../../_90_Delivery/bins/app/srv_main ../../_90_Delivery/bins/app/srv_main.o ../../_90_Delivery/bins/app/foo_api.o ../../_90_Delivery/bins/app/foo_local.o ../../_90_Delivery/bins/app/srv_foo_common.o -L../../_90_Delivery/bins/lib/ -l_common
+
+Recursive Make:
+https://www.eecs.wsu.edu/~cs224/notes/makefile.html

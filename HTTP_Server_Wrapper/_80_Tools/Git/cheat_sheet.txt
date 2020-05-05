@@ -1,0 +1,13 @@
+
+git clone
+git fetch
+
+git status
+git add .
+git commit -a -m '<msg>'
+git push
+
+git branch -vv -a # shows branches with tracking
+git checkout <branch_name>
+git checkout -b <local_branch> origin/<remote_branch>
+git merge <branch_name> // works only with commits already made

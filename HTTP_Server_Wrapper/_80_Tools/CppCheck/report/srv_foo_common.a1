@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2897441379">
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Srv_Foo_Common"/>
+    <functioncall functionName="stat_foo"/>
+  </FileInfo>
+</analyzerinfo>

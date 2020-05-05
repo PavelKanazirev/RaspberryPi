@@ -1,0 +1,3 @@
+cppcheck <path_to_workspace>/cpp_workspace/<project_name>
+<project_name>/_80_Tools/CppCheck$ cppcheck ../../
+

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3913834092">
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Foo_local"/>
+  </FileInfo>
+</analyzerinfo>
